@@ -1,0 +1,31 @@
+{
+  "name": "istanbul-rewire-test",
+  "version": "1.0.0",
+  "description": "A test repository for debugging why istanbul and rewire are fighting with each other",
+  "main": "index.js",
+  "scripts": {
+    "nyc-test-fail": "nyc mocha test/foo.test.js test/baz.test.js",
+    "nyc-test-pass": "nyc mocha test/baz.test.js test/foo.test.js",
+    "istanbul-test-pass1": "istanbul cover --report text _mocha -- test/foo.test.js test/baz.test.js",
+    "istanbul-test-pass2": "istanbul cover --report text _mocha -- test/foo.test.js test/baz.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bforbis/istanbul-rewire-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bforbis/istanbul-rewire-test/issues"
+  },
+  "homepage": "https://github.com/bforbis/istanbul-rewire-test#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "rewire": "^3.0.2",
+    "sinon": "^4.1.3"
+  }
+}
