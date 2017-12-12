@@ -4,6 +4,8 @@ A test repository for debugging why istanbul and rewire are fighting with each o
 ## Introduction
 I noticed in one of my projects that I was getting some weird behavior while using the `nyc` test coverage in the same project that included a dependency for `rewire@3`. In this repository, I am trying to provide an example demo for this problem with the minimum setup I can create.
 
+The following tests were performed on mac OS using node version 8.9.1 and npm version 5.5.1
+
 
 ## With rewire@3
 
