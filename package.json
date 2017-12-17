@@ -7,7 +7,7 @@
     "nyc-test-fail": "nyc mocha test/foo.test.js test/baz.test.js",
     "nyc-test-pass": "nyc mocha test/baz.test.js test/foo.test.js",
     "istanbul-test-pass1": "istanbul cover --report text _mocha -- test/foo.test.js test/baz.test.js",
-    "istanbul-test-pass2": "istanbul cover --report text _mocha -- test/foo.test.js test/baz.test.js"
+    "istanbul-test-pass2": "istanbul cover --report text _mocha -- test/baz.test.js test/foo.test.js"
   },
   "repository": {
     "type": "git",
